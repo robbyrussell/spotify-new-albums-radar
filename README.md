@@ -34,6 +34,9 @@ Running the tool:
 
     $ ruby spotify_new_albums_release_radar.rb
 
+
+![Example proof-of-concept](https://monosnap.com/image/v6tHu2SdVc3C2cDEqLny18UGcDXePS)
+
 ## Notes
 
 > "Why can't I just listen to all the new albums front-to-end?" -- me, yesterday
