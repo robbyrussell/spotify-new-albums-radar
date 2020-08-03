@@ -35,7 +35,7 @@ Running the tool:
     $ ruby spotify_new_albums_release_radar.rb
 
 
-![Example proof-of-concept](https://monosnap.com/image/v6tHu2SdVc3C2cDEqLny18UGcDXePS)
+![Example proof-of-concept](https://monosnap.com/image/niZy5suMeiyIHcOTxALb9nFsIBAt5g)
 
 ## Notes
 
