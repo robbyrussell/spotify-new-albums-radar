@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'bundler/inline'
 
 gemfile do
@@ -18,10 +20,10 @@ new_album_releases = []
 
 # For each new track released, let's take a quick look at the corresponding album
 release_radar.tracks.each do |track|
-
   # Let's skip multi-artist tracks for now
   # These are likely remixes and/or one-off singles
   next if track.artists.size > 1
+
   artist = track.artists.first
 
   # Let's assume albums with only one track are singles
@@ -31,7 +33,6 @@ release_radar.tracks.each do |track|
 
   # debugging...
   # TODO: could save some API queries with some local caching of data
-
   new_album_releases << { album: track.album, artist: artist }
 end
 
@@ -43,7 +44,8 @@ new_album_releases.each do |album_release|
   # TODO: Add each album's tracks to our new playlist
   # release_radar_albums.add_tracks!(album_release[:album].tracks)
 
-  puts "#{index}: #{album_release[:artist].name} released \"#{album_release[:album].name}\" with #{album_release[:album].tracks.size} songs."
+  puts "#{index}: #{album_release[:artist].name} released \"#{album_release[:album].name}\" \
+        with #{album_release[:album].tracks.size} songs."
 end
 
 # TODO: Relies on OAuth to modify details that are not public
