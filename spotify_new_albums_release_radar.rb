@@ -44,8 +44,7 @@ new_album_releases.each do |album_release|
   # TODO: Add each album's tracks to our new playlist
   # release_radar_albums.add_tracks!(album_release[:album].tracks)
 
-  puts "#{index}: #{album_release[:artist].name} released \"#{album_release[:album].name}\" \
-        with #{album_release[:album].tracks.size} songs."
+  puts "#{index}: #{album_release[:artist].name} released \"#{album_release[:album].name}\" with #{album_release[:album].tracks.size} songs."
 end
 
 # TODO: Relies on OAuth to modify details that are not public
