@@ -26,8 +26,7 @@ release_radar.tracks.each do |track|
 
   artist = track.artists.first
 
-  # Let's assume albums with only one track are singles
-  next if track.album.tracks.size == 1
+  next if track.album.album_type == "single"
 
   # TODO: Consider skipping 'Live' and 'Remastered' albums
 
